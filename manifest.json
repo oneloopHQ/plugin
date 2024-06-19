@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Oneloop.care",
+    "description": "Reduce team burnout. Maximise efficiency. Scale practice experience. Elevate patient outcomes.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "public/icon.png"
+    }
+  }
