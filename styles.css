@@ -1,0 +1,50 @@
+#oneloop-window {
+  width: 30%;
+  background: #000;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999999;
+}
+
+#oneloop-window {
+  display: none;
+}
+#oneloop-window #close-button {
+  position: fixed;
+  z-index: 999999999999;
+  top: 0px;
+  border: none;
+  background: #ec4258;
+  padding: 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.action-float-button {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  border-radius: 50%;
+  width: 50px;
+  z-index: 999999999999;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ec4258;
+}
+
+.action-float-button * {
+  user-select: none;
+  pointer-events: none;
+}
+
+#floating-button {
+  position: fixed;
+  z-index: 999999999999999999;
+  background: #000;
+}

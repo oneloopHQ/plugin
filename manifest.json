@@ -1,10 +1,27 @@
 {
-    "manifest_version": 3,
-    "name": "Oneloop.care",
-    "description": "Reduce team burnout. Maximise efficiency. Scale practice experience. Elevate patient outcomes.",
-    "version": "1.0",
-    "action": {
-      "default_popup": "index.html",
-      "default_icon": "public/icon.png"
+  "manifest_version": 3,
+  "name": "Oneloop.care",
+  "description": "Reduce team burnout. Maximise efficiency. Scale practice experience. Elevate patient outcomes.",
+  "version": "1.0",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
     }
-  }
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "public/icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css", "floating.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
