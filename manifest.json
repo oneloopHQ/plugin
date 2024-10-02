@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Oneloop.care",
+  "name": "Supercare",
   "description": "Reduce team burnout. Maximise efficiency. Scale practice experience. Elevate patient outcomes.",
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
